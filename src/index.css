@@ -39,11 +39,10 @@ body {
   flex-direction: row;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media(max-width: 1024px) {
 
 
   html, body, #root{
-
     overflow-y: auto;
   }
 }
