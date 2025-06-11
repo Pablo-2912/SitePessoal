@@ -1,0 +1,14 @@
+.home-container {
+  height: 100vh;
+}
+
+.icons-row {
+  /* gap-4 do bootstrap já tá aí, mas pode ajustar se quiser */
+  display: flex;
+  width: 25%;
+}
+
+.icon-box {
+  width: 25%;
+  height: 80px;
+}

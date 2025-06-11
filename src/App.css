@@ -1,0 +1,190 @@
+/* Estilos principais */
+.app-lbl-nome {
+  font-size: 6rem;
+  color: rgb(241, 241, 241);
+  font-weight: 500;
+  display: block;
+  font-family: 'Jomolhari', serif;
+  letter-spacing: 0.05em;
+}
+
+.app-lbl-cargo {
+  font-size: 2.2rem;
+  color: rgb(241, 241, 241);
+  display: block;
+  margin-top: 0.25rem; /* 4px */
+  text-decoration: underline;
+}
+
+.app-label-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.app-main-row {
+  width: 100%;
+  display: flex;
+}
+
+.app-main-col {
+  width: 60%;
+  height: 100dvh;
+}
+
+.app-right-col {
+  width: 40%;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centraliza horizontalmente */
+}
+
+.home-div-linkRow {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.home-container-main {
+  color: rgb(241, 241, 241);
+  text-align: justify;
+  font-size: 1.5rem;
+  width: 60%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+/* Para garantir herança de fonte em todos os elementos */
+* {
+  font-size: inherit;
+}
+
+/* Estilos base do html */
+html {
+  font-size: 100%; /* 16px */
+}
+
+/* De 1601px pra cima */
+@media (min-width: 1601px) {
+  .home-container-main {
+    margin-left: 0;
+  }
+    .app-right-col {
+  justify-content: left; /* centraliza horizontalmente */
+}
+}
+
+/* Entre 1367px e 1600px */
+@media (min-width: 1367px) and (max-width: 1600px) {
+  html {
+    font-size: 93.75%; /* 15px */
+  }
+  .app-main-col,
+  .app-right-col {
+    width: 50%;
+  }
+  .home-container-main {
+    margin-left: 0;
+  }
+    .app-right-col {
+  justify-content: center; /* centraliza horizontalmente */
+}
+}
+
+/* Entre 1025px e 1366px */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  html {
+    font-size: 87.5%; /* 14px */
+  }
+  .home-container-main {
+    margin-left: 0;
+  }
+  .app-main-col,
+  .app-right-col {
+    width: 60%;
+  }
+    .app-right-col {
+  justify-content: center; /* centraliza horizontalmente */
+}
+}
+
+/* Entre 769px e 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: 81.25%; /* 13px */
+  }
+  .home-container-main {
+    margin-left: 2%;
+  }
+    .app-right-col {
+  justify-content: center; /* centraliza horizontalmente */
+}
+}
+
+/* Entre 481px e 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  html {
+    font-size: 75%; /* 12px */
+  }
+    .app-right-col {
+  justify-content: center; /* centraliza horizontalmente */
+}
+}
+
+/* Layout para telas até 900px (ou seja, 0 a 900) */
+@media (max-width: 900px) {
+  .app-main-row {
+    flex-direction: column;
+  }
+  .home-container-main {
+    margin-left: 0;
+    width: 80%;
+    height: 100%;
+  }
+    .app-right-col {
+  justify-content: center; /* centraliza horizontalmente */
+}
+  .app-main-col,
+  .app-right-col {
+    width: 100%;
+  }
+  .app-main-col {
+    height: 30dvh;
+  }
+  .app-right-col {
+    height: 70dvh;
+    justify-content: center;
+    align-items: center;
+  }
+  .app-lbl-nome {
+    font-size: 4rem;
+  }
+  .app-lbl-cargo {
+    font-size: 2.5rem;
+    margin-top: 0.25rem;
+    text-decoration: underline;
+  }
+}
+
+/* Ajustes só para telas até 480px */
+@media (max-width: 480px) {
+  html {
+    font-size: 68.75%; /* 11px */
+  }
+
+  /* Se quiser diminuir ainda mais fontes e margens específicas, pode aqui */
+  .app-lbl-nome {
+    font-size: 3rem; /* menor que 4rem pra 481-900 */
+  }
+  .app-lbl-cargo {
+    font-size: 2rem; /* menor que 2.5rem pra 481-900 */
+  }
+  .home-container-main {
+    margin: 0 auto; /* centraliza melhor em telas pequenas */
+  }
+}
