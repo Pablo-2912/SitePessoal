@@ -21,7 +21,7 @@ const Snowfall: React.FC<SnowfallProps> = ({ numBalls = 140 }) => {
       x: Math.random() * canvas.width,
       y: -Math.random() * 50,             // Começa acima do topo (entre 0 e -50)
       radius: Math.random() * 1 + 0.7,
-      speed: Math.random() * 1.4 + 0.12,
+      speed: Math.random() * 0.4 + 0.12,
     }));
 
     const render = () => {
