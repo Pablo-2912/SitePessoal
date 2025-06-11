@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Snowfall from './page/components/snowEfect/snowEfect'; // ajuste o caminho conforme a sua estrutura
 import Home from './page/home/home';
 import LinkRow from './page/components/links/LinkRow'; 
